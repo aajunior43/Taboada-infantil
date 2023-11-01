@@ -1,0 +1,43 @@
+/* Estilização global do corpo e cabeçalho */
+body {
+  background-color: lightblue;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+header {
+  text-align: center;
+  background-color: yellow;
+  padding: 20px;
+}
+
+h1 {
+  color: red;
+  font-size: 48px;
+}
+
+/* Estilização do container e elementos da taboada */
+#mainContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 40px;
+}
+
+.taboadaBox {
+  width: 120px;
+  height: 120px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 24px;
+  box-shadow: 0px 0px 15px 5px #00000040;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.taboadaBox:hover {
+  transform: scale(1.1);
+}
